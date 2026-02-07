@@ -1,0 +1,16 @@
+.navbar {
+  background: linear-gradient(90deg, #1e3c72, #2a5298);
+}
+
+.navbar-brand {
+  color: #fff !important;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  color: #e0e0e0 !important;
+}
+
+.nav-link.active {
+  color: #ffd700 !important;
+}
