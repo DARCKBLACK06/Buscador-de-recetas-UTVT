@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,23 +9,41 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/custom.css">
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-danger bg-gradient p-3">
         <div class="container-fluid">
-            <a class="navbar-brand fs-4" href="index.html">Buscador de Recetas de Francisco Javier Estrada Reyes</a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand fs-4" href="index.html">
+                Buscador de Recetas de Francisco Javier Estrada Reyes
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav align-items-center">
+
                     <li class="nav-item">
-                        <a class="nav-link fs-4" href="index.html">Inicio</a>
+                        <a class="nav-link fs-4" href="index.html">
+                            Inicio
+                        </a>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link fs-4 active" aria-current="page"  href="favoritos.html">Mis Favoritos</a>
+                        <a class="nav-link fs-4 active" aria-current="page" href="favoritos.html">
+                            Mis Favoritos
+                        </a>
                     </li>
+
+                    <li class="nav-item ms-3">
+                        <button id="toggleDark" class="btn btn-outline-light">
+                            🌙
+                        </button>
+                    </li>
+
                 </ul>
             </div>
 
@@ -32,7 +51,9 @@
     </nav>
 
 
-    <div class="modal fade" id="modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+
+    <div class="modal fade" id="modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
@@ -47,8 +68,8 @@
     </div>
 
     <main class="mt-5 container-lg">
-      <h2 class="text-center fs-1">Favoritos</h2>
-      <div id="resultado" class="favoritos row"></div>
+        <h2 class="text-center fs-1">Favoritos</h2>
+        <div id="resultado" class="favoritos row"></div>
     </main>
 
 
@@ -56,7 +77,8 @@
         <div id="toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
             <div class="toast-header bg-danger text-white">
                 <strong class="me-auto text-white">App Recetas</strong>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast"
+                    aria-label="Close"></button>
             </div>
             <div class="toast-body"></div>
         </div>
@@ -65,4 +87,5 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/app.js"></script>
 </body>
+
 </html>

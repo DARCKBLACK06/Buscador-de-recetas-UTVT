@@ -14,3 +14,43 @@
 .nav-link.active {
   color: #ffd700 !important;
 }
+
+/* ===== MODO OSCURO ===== */
+
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+/* Navbar */
+body.dark-mode .navbar {
+  background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+}
+
+/* Cards */
+body.dark-mode .card {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  border: 1px solid #333;
+}
+
+/* Formularios */
+body.dark-mode .form-select,
+body.dark-mode .form-control {
+  background-color: #2a2a2a;
+  color: #fff;
+  border-color: #444;
+}
+
+/* Modal */
+body.dark-mode .modal-content {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+/* Toast */
+body.dark-mode .toast,
+body.dark-mode .toast-header {
+  background-color: #333;
+  color: #fff;
+}
